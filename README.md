@@ -1,4 +1,5 @@
 # MATB34
+
 MATB34 Linear Analysis, 7.5 credits, is an alternatively compulsory course for a Bachelor of Science degree in mathematics. The course is given in English, at half study pace, in the first half of each semester. The course can be taken as as stand-alone course.
 
 Course Content
