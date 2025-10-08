@@ -4,11 +4,14 @@
 
 Reading
 
-- \[P] Ch. 1.5 (Power series, complex exponential; differentiation/integration of series)
+- [x] \[P] Ch. 1.5 (Power series, complex exponential; differentiation/integration of series)
 
 Exercises
 
-- \[E]: 101–105, 109–114, 117–122
+- \[E]:
+  - [ ] 101–105
+  - [ ] 109–114
+  - [ ] 117–122
 
 ## Week 2
 
