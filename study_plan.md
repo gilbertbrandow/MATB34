@@ -9,9 +9,9 @@ Reading
 Exercises
 
 - \[E]:
-  - [ ] 101–105
-  - [ ] 109–114
-  - [ ] 117–122
+  - [x] 101–105
+  - [x] 109–114
+  - [x] 117–122 (Revisit proof of uniform convergence, strategies and what not)
 
 ## Week 2
 
