@@ -17,13 +17,17 @@ Exercises
 
 Reading
 
-- \[V]: Ch. 2.2–2.4 (Cesàro summation, summation kernels)
-- \[V]: Ch. 2.5–2.6 (Riemann–Lebesgue lemma, basic distributions)
-
+- \[V]:
+  - [ ] Ch. 2.2–2.4 (Cesàro summation, summation kernels)
+  - [ ] Ch. 2.5–2.6 (Riemann–Lebesgue lemma, basic distributions)
+s
 Exercises
 
-- \[P]: 115, 117, 118, 122–127
-- \[V]: 2.12, 2.15, 2.16, 2.17, 2.18, 2.19, 2.20
+- \[P]:
+  - [ ] 115, 117, 118, 122–127
+- \[V]:
+  - [x] Ch. 2.3: 2.12, 2.15(REVISIT)
+  - [ ] Ch: 2.4: 2.16, 2.17, 2.18, 2.19, 2.20
 
 ## Week 3
 
