@@ -11,7 +11,7 @@ Exercises
 - \[E]:
   - [x] 101–105
   - [x] 109–114
-  - [x] 119–122 (Revisit exercises proving uniform convergence)
+  - [x] 119–122 (Revisit exercises proving uniform convergence)(Weirstrass M-test)
 
 ## Week 2
 
@@ -24,8 +24,8 @@ Reading
 Exercises
 
 - \[P]:
-  - [x] 115, 117, 118
-  - [x] 123, 124, 125, 126, 127 (Weirstrass M-test)
+  - [] 115, 117, 118
+  - [] 122, 123, 124, 125, 126, 127
 - \[V]:
   - [x] Ch. 2.3: 2.12, 2.15(REVISIT), 2.16
   - [x] Ch: 2.4: 2.17, 2.18, 2.19, 2.20(REVISIT, Gaussian Integral)
@@ -43,7 +43,7 @@ Exercises
 - \[V]:
   - [ ] 2.22, 2.23, 2.24
   - [ ] 2.26, 2.29
-  - [ ] 3.1–3.3, 3.4–3.6, 3.8
+  - [ ] 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.8
 
 ## Week 4
 
@@ -54,7 +54,9 @@ Reading
 
 Exercises
 
-- \[V]: 3.17–3.24
+- \[V]:
+  - [ ] 3.17–3.24
+  - [ ] 3.30-3.36
 
 ## Week 5
 
@@ -65,7 +67,9 @@ Reading
 
 Exercises
 
-- \[V]: 4.1, 4.2, 4.3, 4.5
+- \[V]:
+  - [ ] 4.1-4.3, 4.5
+  - [ ] 4.15, 4.16, 4.18-4.21, 4.23-4.26
 - \[E]: 201–205
 
 ## Week 6
@@ -83,13 +87,17 @@ Exercises
 
 Reading
 
-- \[V]: Ch. 7.1–7.3 (Introduction to the Fourier transform on R.)
+- \[V]:
+  - [ ] Ch. 7.1–7.3 (Introduction to the Fourier transform on R.)
+  - [ ] Ch. 7.4–7.6 (Introduction to the Fourier transform on R)
 
 Exercises
 
 - \[V]:
+  - [ ] 6.12, 6.13
   - [ ] 7.5-7.7, 7.10
 - \[E]:
+  - [ ] 302-303, 308-309
   - [ ] 401-405
 
 ## Week 8
@@ -104,5 +112,7 @@ Exercises
 
 - \[V]:
   - [ ] 7.11-7.16
+  - [ ] 7.25-7.28
 - \[E]:
   - [ ] 407-409
+  - [ ] 410, 411, 437-439
