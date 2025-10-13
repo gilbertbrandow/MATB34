@@ -39,7 +39,7 @@ Reading
 
 - \[V]
   - [x] Ch. 3.1, 3.2 (Laplace transform: basics)
-  - [ ] Ch. 3.3 (Laplace transform: applications)
+  - [x] Ch. 3.3 (Laplace transform: applications)
 
 Exercises
 
@@ -47,46 +47,54 @@ Exercises
   - [x] 2.22, 2.23, 2.24
   - [x] 2.26, 2.29
   - [x] 3.1, 3.2, 3.3
-  - [ ] 3.4, 3.5, 3.6, 3.8
+  - [x] 3.4, 3.5, 3.6 (REVISIT, Heaviside shifting), 3.8
 
 ## Week 4
 
 Reading
 
 - \[V]:
-  - [ ] Ch. 3.4 (Convolutions)
-  - [ ] Ch. 4.1–4.2 (Fourier series: introduction)
+  - [x] Ch. 3.4 (Convolutions)
+  - [x] Ch. 4.1–4.2 (Fourier series: introduction)
 
 Exercises
 
 - \[V]:
-  - [ ] 3.17–3.24
-  - [ ] 3.30-3.36
-
+  - [x] 3.17, 3.18, 3.19, 3.20, 3.21, 3.22, 3.23, 3.24 (REVISIT)
+  - [x] 3.30, 3.31, 3.32, 3.33
+  - [ ] 3.34, 3.35, 3.36
+  
 ## Week 5
 
 Reading
 
-- \[V]: Ch. 4.3–4.5 (Fourier series: further topics)
-- \[V]: Ch. 5.1–5.3 (Hilbert spaces: basics)
+- \[V]:
+  - [ ] Ch. 4.3–4.5 (Fourier series: further topics)
+  - [ ] Ch. 5.1–5.3 (Hilbert spaces: basics)
 
 Exercises
 
 - \[V]:
-  - [ ] 4.1-4.3, 4.5
-  - [ ] 4.15, 4.16, 4.18-4.21, 4.23-4.26
-- \[E]: 201–205
+  - [x] 4.1. 4.2, 4.3, 4.5 (REVISIT)
+  - [x] 4.15 (REVISIT), 4.16
+  - [x] 4.18, 4.19, 4.20, 4.21 (REVISIT)
+  - [ ] 4.23, 4.24, 4.25, 4.26
+- \[E]:
+  - [ ]201–205
 
 ## Week 6
 
 Reading
 
-- \[V]: Ch. 5.4–5.5 (Completeness of Fourier system, orthogonal polynomials)
-- \[V]: Ch. 1.4; Ch. 6.1–6.2 (Applications of Fourier series)
+- \[V]:
+  - [ ] Ch. 5.4–5.5 (Completeness of Fourier system, orthogonal polynomials)
+  - [ ] Ch. 1.4
+  - [ ] Ch. 6.1–6.2 (Applications of Fourier series)
 
 Exercises
 
-- \[V]: 6.1–6.11
+- \[V]:
+  - [ ] 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.11
 
 ## Week 7
 
@@ -100,7 +108,7 @@ Exercises
 
 - \[V]:
   - [ ] 6.12, 6.13
-  - [ ] 7.5-7.7, 7.10
+  - [ ] 7.5, 7.6, 7.7, 7.10
 - \[E]:
   - [ ] 302-303, 308-309
   - [ ] 401-405
