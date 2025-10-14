@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{newtxtext,newtxmath}
+\title{\vspace{-1em}Trigonometric Identities — Cheat Sheet}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-2em}
+
+\section*{Basic / Definitions}
+\begin{align*}
+&\text{Reciprocals:}\quad \sec x=\frac1{\cos x},\ \csc x=\frac1{\sin x},\ \cot x=\frac{\cos x}{\sin x}.\\[-0.25em]
+&\text{Quotients:}\quad \tan x=\frac{\sin x}{\cos x},\ \cot x=\frac{1}{\tan x}.\\[-0.25em]
+&\text{Pythagorean:}\quad \sin^2x+\cos^2x=1,\quad 1+\tan^2x=\sec^2x,\quad 1+\cot^2x=\csc^2x.\\[-0.25em]
+&\text{Negative angle:}\quad \sin(-x)=-\sin x,\ \cos(-x)=\cos x,\ \tan(-x)=-\tan x.\\[-0.25em]
+&\text{Periodicity:}\quad \sin(x+2\pi)=\sin x,\ \cos(x+2\pi)=\cos x,\ \tan(x+\pi)=\tan x.
+\end{align*}
+
+\section*{Angle Addition / Subtraction}
+\begin{align*}
+\sin(x\pm y)&=\sin x\cos y\pm \cos x\sin y,\\
+\cos(x\pm y)&=\cos x\cos y\mp \sin x\sin y,\\
+\tan(x\pm y)&=\dfrac{\tan x\pm \tan y}{1\mp \tan x\,\tan y}.
+\end{align*}
+
+\section*{Double / Triple Angle}
+\begin{align*}
+\sin(2x)&=2\sin x\cos x,\\
+\cos(2x)&=\cos^2x-\sin^2x=2\cos^2x-1=1-2\sin^2x,\\
+\tan(2x)&=\dfrac{2\tan x}{1-\tan^2x}\quad(\tan x\neq \pm1),\\
+\sin(3x)&=3\sin x-4\sin^3x,\qquad
+\cos(3x)=4\cos^3x-3\cos x.
+\end{align*}
+
+\section*{Half-Angle / Power-Reducing}
+\begin{align*}
+\sin^2x&=\frac{1-\cos(2x)}{2},\qquad
+\cos^2x=\frac{1+\cos(2x)}{2},\\
+\sin^2\!\frac{x}{2}&=\frac{1-\cos x}{2},\qquad
+\cos^2\!\frac{x}{2}=\frac{1+\cos x}{2},\\
+\tan\frac{x}{2}&=\frac{\sin x}{1+\cos x}=\frac{1-\cos x}{\sin x}.
+\end{align*}
+
+\section*{Product-to-Sum \& Sum-to-Product}
+\begin{align*}
+\sin x\cos y&=\tfrac12\!\left[\sin(x{+}y)+\sin(x{-}y)\right],\\
+\cos x\cos y&=\tfrac12\!\left[\cos(x{+}y)+\cos(x{-}y)\right],\\
+\sin x\sin y&=\tfrac12\!\left[\cos(x{-}y)-\cos(x{+}y)\right],\\[0.4em]
+\sin x+\sin y&=2\sin\!\frac{x{+}y}{2}\cos\!\frac{x{-}y}{2},\qquad
+\sin x-\sin y=2\cos\!\frac{x{+}y}{2}\sin\!\frac{x{-}y}{2},\\
+\cos x+\cos y&=2\cos\!\frac{x{+}y}{2}\cos\!\frac{x{-}y}{2},\qquad
+\cos x-\cos y=-2\sin\!\frac{x{+}y}{2}\sin\!\frac{x{-}y}{2}.
+\end{align*}
+
+\section*{Useful for Integration}
+\begin{align*}
+\int \sin^2x\,dx&=\frac{x}{2}-\frac{\sin(2x)}{4}+C,\qquad
+\int \cos^2x\,dx=\frac{x}{2}+\frac{\sin(2x)}{4}+C,\\
+\int \sin x\cos x\,dx&=-\frac{\cos^2x}{2}+C=\frac{\sin^2x}{2}+C,\\
+\sin^2x\,\cos^2x&=\tfrac14\sin^2(2x),\quad
+\int \sin^2x\,\cos^2x\,dx=\frac{x}{8}-\frac{\sin(4x)}{32}+C.
+\end{align*}
+
+\section*{Complex (Euler) Forms}
+\begin{align*}
+e^{ix}&=\cos x+i\sin x,\quad
+\cos x=\tfrac{e^{ix}+e^{-ix}}{2},\quad
+\sin x=\tfrac{e^{ix}-e^{-ix}}{2i}.
+\end{align*}
+
+\vspace{0.5em}
+\noindent\textbf{Parity tip:} $\cos$ is even, $\sin$ is odd. On $[-L,L]$, integrals of odd functions vanish; even functions double: $\int_{-L}^L \text{even} = 2\!\int_0^L$.
+
+\end{document}
