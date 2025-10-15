@@ -87,28 +87,32 @@ Exercises
 Reading
 
 - \[V]:
-  - [ ] Ch. 5.4–5.5 (Completeness of Fourier system, orthogonal polynomials)
-  - [ ] Ch. 1.4
-  - [ ] Ch. 6.1–6.2 (Applications of Fourier series)
+  - [x] Ch. 5.4–5.5 (Completeness of Fourier system, orthogonal polynomials) (REVISIT)
+  - [x] Ch. 1.4
+  - [x] Ch. 6.1
+  - [x] Ch. 6.2 (Applications of Fourier series)
 
 Exercises
 
 - \[V]:
-  - [ ] 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 6.10, 6.11
+  - [x] 6.1, 6.2
+  - [x] 6.3, 6.4, 6.5, 6.6
+  - [ ] 6.7, 6.8, 6.9, 6.10, 6.11
 
 ## Week 7
 
 Reading
 
 - \[V]:
-  - [ ] Ch. 7.1–7.3 (Introduction to the Fourier transform on R.)
-  - [ ] Ch. 7.4–7.6 (Introduction to the Fourier transform on R)
+  - [x] Ch. 6.3
+  - [x] Ch. 7.1–7.3 (Introduction to the Fourier transform on R.)
+  - [ ] Ch. 7.4–7.6 (Fourier transform on R)
 
 Exercises
 
 - \[V]:
-  - [ ] 6.12, 6.13
-  - [ ] 7.5, 7.6, 7.7, 7.10
+  - [x] 6.12, 6.13
+  - [x] 7.5, 7.6, 7.7(REVISIT GAUSSIAN INTEGRALS), 7.10
 - \[E]:
   - [ ] 302, 303, 308, 309
   - [ ] 401, 402, 403, 404, 405
@@ -124,8 +128,8 @@ Reading
 Exercises
 
 - \[V]:
-  - [ ] 7.11-7.16
-  - [ ] 7.25-7.28
+  - [ ] 7.11, 7.12, 7.13, 7.14, 7.15, 7.16
+  - [ ] 7.25, 7.26, 7.27, 7.28
 - \[E]:
   - [ ] 407, 408, 409
   - [ ] 410, 411, 437, 438, 439
