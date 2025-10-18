@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{enumitem}
+\usepackage{newtxtext,newtxmath}
+\title{MATB34 - Written Assignment}
+\author{Simon Gustafsson}
+\date{20th October 2025}
+\begin{document}
+\maketitle
+
+\section{Laplace transforms}
+
+\begin{enumerate}[label=(\arabic*)]
+
+\item
+\[
+\mathcal{L}\{\cos^2(\omega t)\} 
+= \mathcal{L}\!\left\{\tfrac12\bigl(1+\cos(2\omega t)\bigr)\right\}
+= \tfrac12\bigl(\mathcal{L}\{1\}+\mathcal{L}\{\cos(2\omega t)\}\bigr)
+= \tfrac12\left(\frac{1}{s}+\frac{s}{s^{2}+4\omega^{2}}\right).
+\]
+
+\item
+\[
+\mathcal{L}\{t^2-1\}
+= \mathcal{L}\{t^2\}-\mathcal{L}\{1\}
+= \frac{2}{s^{3}}-\frac{1}{s}.
+\]
+
+\item
+\[
+\mathcal{L}\{e^{-t}\cos^{2}t\}
+= \mathcal{L}\!\left\{e^{-t}\cdot \tfrac12\bigl(1+\cos(2t)\bigr)\right\}
+= \tfrac12\,\mathcal{L}\{e^{-t}\}+\tfrac12\,\mathcal{L}\{e^{-t}\cos(2t)\}
+= \frac{1}{2(s+1)}+\frac{s+1}{2((s+1)^{2}+4)}.
+\]
+
+\end{enumerate}
+
+\section{Inverse Laplace transforms}
+\section{Ordinary differential equations}
+
+
+\end{document}
