@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  20 OCT 2025 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.8)  20 OCT 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,6 +468,8 @@ Overfull \hbox (19.36044pt too wide) detected at line 37
 \LMS/ntxsy/m/n/10.95 Lf\OML/ntxmi/m/it/10.95 e[] [][] t\LMS/ntxsy/m/n/10.95 g \U/ntxmia/m/it/10.95 = \LMS/ntxsy/m/n/10.95 L  [] \U/ntxmia/m/it/10.95 = [] \LMS/ntxsy/m/n/10.95 Lf\OML/ntxmi/m/it/10.95 e[]\LMS/ntxsy/m/n/10.95 g Ï [] Lf\OML/ntxmi/m/it/10.95 e[] []\LMS/ntxsy/m/n/10.95 ¹\OT1/minntx/m/n/10.95 2\OML/ntxmi/m/it/10.95 t\LMS/ntxsy/m/n/10.95 ºg \U/ntxmia/m/it/10.95 = [] \LMS/ntxsy/m/n/10.95 Ï []\OML/ntxmi/m/it/10.95 :
  []
 
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.95pt on input line 57.
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] (build/assignment.aux)
@@ -477,18 +479,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7382 strings out of 474116
- 104846 string characters out of 5743683
- 1933187 words of memory out of 5000000
- 29623 multiletter control sequences out of 15000+600000
- 595668 words of font info for 120 fonts, out of 8000000 for 9000
+ 7387 strings out of 474116
+ 104962 string characters out of 5743683
+ 1943187 words of memory out of 5000000
+ 29626 multiletter control sequences out of 15000+600000
+ 597159 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,6n,93p,397b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on build/assignment.pdf (1 page, 99471 bytes).
+ 80i,11n,93p,397b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on build/assignment.pdf (1 page, 125141 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

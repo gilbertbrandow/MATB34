@@ -39,6 +39,36 @@
 \end{enumerate}
 
 \section{Inverse Laplace transforms}
+
+\begin{enumerate}[label=(\arabic*)]
+
+\item
+\[
+\begin{aligned}
+\mathcal{L}^{-1}\!\left\{\frac{1}{(s-a)(s-b)}\right\}
+&= \mathcal{L}^{-1}\!\left\{\frac{1}{a-b}\!\left(\frac{1}{s-a}-\frac{1}{s-b}\right)\right\} \\[4pt]
+&= \frac{1}{a-b}\,\mathcal{L}^{-1}\!\left\{\frac{1}{s-a}-\frac{1}{s-b}\right\} \\
+&= \frac{1}{a-b}\Bigl(\mathcal{L}^{-1}\!\left\{\frac{1}{s-a}\right\}
+     -\mathcal{L}^{-1}\!\left\{\frac{1}{s-b}\right\}\Bigr) \\
+&= \frac{1}{a-b}\bigl(e^{at}-e^{bt}\bigr) \\
+&= \frac{e^{at}-e^{bt}}{a-b}\qquad (a\neq b).
+\end{aligned}
+\]
+\emph{If $a=b$ then }$\displaystyle \mathcal{L}^{-1}\!\left\{\frac{1}{(s-a)^2}\right\}=t e^{at}$
+
+\item
+\[
+\begin{aligned}
+\mathcal{L}^{-1}\!\left\{\frac{s^{2}}{1+s^{2}}\right\}
+&= \mathcal{L}^{-1}\!\left\{\frac{s^{2}+1-1}{s^{2}+1}\right\} \\[2pt]
+&= \mathcal{L}^{-1}\!\left\{1-\frac{1}{s^{2}+1}\right\} \\[2pt]
+&= \mathcal{L}^{-1}\{1\}-\mathcal{L}^{-1}\!\left\{\frac{1}{s^{2}+1}\right\} \\[2pt]
+&= \delta(t)-\sin t.
+\end{aligned}
+\]
+
+\end{enumerate}
+
 \section{Ordinary differential equations}
 
 

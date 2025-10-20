@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760953149.71637 "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" "build/assignment.pdf" "assignment" 1760953150.23815 0
-  "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" 1760953149.64014 1048 f6bbd28733cd392911f90cfe7ddafc9b ""
+["pdflatex"] 1760953943.4008 "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" "build/assignment.pdf" "assignment" 1760953943.94791 0
+  "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" 1760953943.31494 2038 196d3228ef72f9a2b84c46ee3d5254d8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -12,6 +12,8 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm" 1572128992 1556 4df22ac3e5cc03ff0898d83d8817c6cf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm" 1572470264 2976 0e6dc2c6c1f88a98285fe5183da02574 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1r.tfm" 1572470264 2980 5351564c3231510c7077e78a0bc39960 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-ot1.tfm" 1572470264 3080 fc4ff7ca096560a9fb1df2e62c57f9c7 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Italic-tlf-ot1r.tfm" 1572470264 3076 3abc541afb22a6bf21c3ba2909ef7090 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm" 1600636029 3008 ca0c83ca288d9f1c5d2fca0e8e268f10 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm" 1690487162 3056 db59b44fb00cc29b676bd92c4dc6750f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm" 1589834365 760 e8ec875a87aa119f1af7ea4be48da9e8 ""
@@ -39,7 +41,9 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/txsys.pfb" 1699567298 45943 7899c7ea4fdd83f3625178689816dcee ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmb.pfb" 1698694482 255251 958c6ad4e5518904a53cf1118c612893 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmr.pfb" 1698694482 286816 82db2bfe6920054b1a43661c07078412 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/newtx/ztmri.pfb" 1698694482 248316 6c047e35119cde1bffb3263909816feb ""
   "/usr/local/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Bold-tlf-ot1.vf" 1572470264 956 0cf724d01d1d2d4ced0eca019099663a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Italic-tlf-ot1.vf" 1572470264 956 2e470d34f6c84588eb717201f2f99e2d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf" 1583272976 956 44be8e0aea9c6d145fc21c9948a6b4b5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxexx.vf" 1699567298 1716 73c8d39d4c3ace9ec98a8f066bb3b494 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/vf/public/newtx/ntxmi.vf" 1622581641 2612 4fd3785b7e98639f68f908a08c642071 ""
@@ -101,8 +105,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725786739.30054 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725786567 8221431 0e3ed4c0ce3a607b82f78dc061b52468 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "assignment.tex" 1760953149.64014 1048 f6bbd28733cd392911f90cfe7ddafc9b ""
-  "build/assignment.aux" 1760953150.17549 371 627bcab5d7cc486ff3b7b322b5d7adc2 "pdflatex"
+  "assignment.tex" 1760953943.31494 2038 196d3228ef72f9a2b84c46ee3d5254d8 ""
+  "build/assignment.aux" 1760953943.87496 371 627bcab5d7cc486ff3b7b322b5d7adc2 "pdflatex"
   (generated)
   "build/assignment.aux"
   "build/assignment.log"
