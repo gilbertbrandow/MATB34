@@ -70,6 +70,42 @@
 \end{enumerate}
 
 \section{Ordinary differential equations}
+\begin{enumerate}[label=(\arabic*)]
+\item
+\[
+\begin{aligned}
+&y''-y'+2y=2e^{3t},\quad y(0)=0,\ y'(0)=0.\\[2pt]
+&(s^2Y - sy(0) - y'(0)) - (sY - y(0)) + 2Y = \frac{2}{s-3} \\[2pt]
+&(s^2 - s + 2)Y = \frac{2}{s-3}
+\;\Rightarrow\;
+Y=\frac{2}{(s-3)(s^2 - s + 2)}.\\[4pt]
+&Y=\frac{1}{4}\frac{1}{s-3}-\frac{1}{4}\frac{s+2}{s^2 - s + 2}
+=\frac{1}{4}\frac{1}{s-3}-\frac{1}{4}\frac{s-\tfrac12}{(s-\tfrac12)^2+\tfrac{7}{4}}-\frac{5}{4}\frac{1}{(s-\tfrac12)^2+\tfrac{7}{4}}.\\[4pt]
+&\Rightarrow\;
+y(t)=\frac{1}{4}e^{3t}-\frac{1}{4}e^{t/2}\cos\!\frac{\sqrt7 t}{2}
+-\frac{5}{4\sqrt7}\,e^{t/2}\sin\!\frac{\sqrt7 t}{2}.
+\end{aligned}
+\]
 
+\item
+\[
+\begin{aligned}
+&y''+4y'+4y=t^3*e^{-2t},\quad y(0)=1,\ y'(0)=2.\\[2pt]
+&(s^2Y-sy(0)-y'(0))+4(sY-y(0))+4Y=\frac{6}{s^4}\cdot\frac{1}{s+2} \\[2pt]
+&(s+2)^2Y=(s+6)+\frac{6}{s^4(s+2)}
+\;\Rightarrow\;
+Y=\frac{s+6}{(s+2)^2}+\frac{6}{s^4(s+2)^3}.\\[4pt]
+&\frac{s+6}{(s+2)^2}=\frac{1}{s+2}+\frac{4}{(s+2)^2},\\[2pt]
+&\frac{6}{s^4(s+2)^3}
+=\frac{-\tfrac{15}{16}}{s}+\frac{\tfrac{9}{8}}{s^2}-\frac{\tfrac{9}{8}}{s^3}
++\frac{\tfrac{3}{4}}{s^4}
++\frac{\tfrac{15}{16}}{s+2}+\frac{\tfrac{3}{4}}{(s+2)^2}+\frac{\tfrac{3}{8}}{(s+2)^3}.\\[4pt]
+&\Rightarrow\;
+\,y(t)=\frac{31}{16}e^{-2t}+\frac{19}{4}t e^{-2t}+\frac{3}{16}t^2 e^{-2t}
+-\frac{15}{16}+\frac{9}{8}t-\frac{9}{16}t^2+\frac{1}{8}t^3
+\end{aligned}
+\]
+
+\end{enumerate}
 
 \end{document}
