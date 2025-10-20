@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760954879.55629 "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" "build/assignment.pdf" "assignment" 1760954880.07815 0
-  "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" 1760954879.06338 3376 72ea6c466f89930583811c270c8ecf7b ""
+["pdflatex"] 1760957191.78678 "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" "build/assignment.pdf" "assignment" 1760957192.31815 0
+  "/Users/simongustafsson/Desktop/Bachelors in Mathematics/MATB34/Assignment/assignment.tex" 1760957191.5916 4339 66e061f4438d780907656a0313efd6b7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -105,8 +105,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725786739.30054 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725786567 8221431 0e3ed4c0ce3a607b82f78dc061b52468 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "assignment.tex" 1760954879.06338 3376 72ea6c466f89930583811c270c8ecf7b ""
-  "build/assignment.aux" 1760954880.00781 371 805700489e54515b312907bbd7a97df3 "pdflatex"
+  "assignment.tex" 1760957191.5916 4339 66e061f4438d780907656a0313efd6b7 ""
+  "build/assignment.aux" 1760957192.24834 371 805700489e54515b312907bbd7a97df3 "pdflatex"
   (generated)
   "build/assignment.aux"
   "build/assignment.log"
