@@ -106,7 +106,7 @@ Reading
 - \[V]:
   - [x] Ch. 6.3
   - [x] Ch. 7.1–7.3 (Introduction to the Fourier transform on R.)
-  - [ ] Ch. 7.4–7.6 (Fourier transform on R)
+  - [x] Ch. 7.4–7.6 (Fourier transform on R)
 
 Exercises
 
@@ -128,7 +128,7 @@ Reading
 Exercises
 
 - \[V]:
-  - [ ] 7.11, 7.12, 7.13, 7.14, 7.15, 7.16
+  - [x] 7.11, 7.12 (REVISIT), 7.13, 7.14(REVISIT), 7.15, 7.16
   - [ ] 7.25, 7.26, 7.27, 7.28
 - \[E]:
   - [ ] 407, 408, 409
