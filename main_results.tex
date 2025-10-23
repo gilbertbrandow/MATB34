@@ -56,14 +56,58 @@ The Fourier coefficient $\hat{f}(n)$ can be expressed as:
 $$\hat{f}(n) = \frac{1}{2\pi} \left( \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx + i \int_{-\pi}^{\pi} f(x) \sin(-nx) \, dx \right)$$
 Since $\cos(nx)$ and $\sin(nx)$ are bounded functions, the absolute integrability of $f$ is preserved when multiplied by these functions. As $|n| \to \infty$, both the real and imaginary parts of the integral tend to zero by applying the Riemann--Lebesgue lemma (and its cosine variant) with $\lambda = n$. Therefore, $\hat{f}(n) \to 0$ as $|n| \to \infty$.
 
-\section*{Parseval's Identity}
-For square-integrable functions $f, g \in L^2(\mathbb{T})$, the Parseval formulas for the squared $L^2$-norm and the inner product are:
-\[
-  \frac{1}{2\pi}\int_{\mathbb{T}} |f(t)|^2 dt = \sum_{n\in\mathbb{Z}} |c_n|^2, \quad \frac{1}{2\pi}\int_{\mathbb{T}} f(t)\overline{g(t)} dt = \sum_{n\in\mathbb{Z}} c_n \overline{d_n},
-\]
-where $c_n = \hat{f}(n)$ and $d_n = \hat{g}(n)$. The latter is often called the \emph{polarized Parseval formula}.
+\section*{Fourier Series Coefficients}
 
-\vspace{1em}
-\noindent\textbf{Criterion for $L^2(\mathbb{T})$:} A function $f$ exists in $L^2(\mathbb{T})$ if and only if its Fourier coefficients are square-summable, $\sum_{n=-\infty}^{\infty} |\hat{f}(n)|^2 < \infty$.
+The representation of a $2\pi$-periodic function $f$ as a Fourier series depends on whether the complex exponential basis or the real trigonometric basis is used.
+
+\subsection*{1. Complex Fourier Series}
+For a function $f \in L^1(\mathbb{T})$, the series representation is:
+\[
+  f(x) \sim \sum_{n \in \mathbb{Z}} c_n e^{inx}
+\]
+The complex Fourier coefficients $c_n = \hat{f}(n)$ are computed as:
+\[
+  c_n = \hat{f}(n) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)e^{-inx}\,dx, \qquad n\in\mathbb{Z}.
+\]
+
+\subsection*{2. Real Fourier Series (Trigonometric)}
+For a real-valued function $f$, the series representation is:
+\[
+  f(x) \sim a_0 + \sum_{n=1}^{\infty} \left( a_n \cos(nx) + b_n \sin(nx) \right)
+\]
+The real Fourier coefficients are computed as:
+\begin{itemize}
+    \item $a_0$ (Constant component):
+    \[
+      a_0 = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\,dx
+    \]
+    \item $a_n$ (Cosine coefficients, $n \ge 1$):
+    \[
+      a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \cos(nx)\,dx, \qquad n\in\mathbb{N}
+    \]
+    \item $b_n$ (Sine coefficients, $n \ge 1$):
+    \[
+      b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x) \sin(nx)\,dx, \qquad n\in\mathbb{N}
+    \]
+\end{itemize}
+\emph{Note:} The relationship between the coefficients is $c_0 = a_0$, and for $n \ge 1$, $c_n = \frac{1}{2}(a_n - ib_n)$ and $c_{-n} = \frac{1}{2}(a_n + ib_n)$.
+
+\section*{Plancherel's Theorem (Parseval's Identity for Fourier Transforms)}
+
+Plancherel's Theorem relates the $L^2$ norm of a function in the time domain $L^2(\mathbb{R})$ to the $L^2$ norm of its Fourier Transform in the frequency domain $L^2(\mathbb{R})$. This identity is essential for evaluating integrals using Fourier transforms.
+
+\subsection*{1. Squared $L^2$-Norm}
+For a square-integrable function $f \in L^2(\mathbb{R})$, the $L^2$-norm is preserved under the Fourier Transform:
+\[
+  \int_{-\infty}^{\infty} |f(t)|^2 dt = \frac{1}{2\pi} \int_{-\infty}^{\infty} |\hat{f}(\xi)|^2 d\xi
+\]
+\emph{Note:} The factor $\frac{1}{2\pi}$ depends on the convention used for the Fourier Transform.
+
+\subsection*{2. Polarized Plancherel Formula}
+For $f, g \in L^2(\mathbb{R})$, the inner product is preserved:
+\[
+  \int_{-\infty}^{\infty} f(t)\overline{g(t)} dt = \frac{1}{2\pi} \int_{-\infty}^{\infty} \hat{f}(\xi)\overline{\hat{g}(\xi)} d\xi
+\]
+The integrals in Problem 6(b) often rely on applying these formulas, usually by identifying the integrand with either the square of a transform $|\hat{f}(\xi)|^2$ or a product of transforms $\hat{f}(\xi)\overline{\hat{g}(\xi)}$.
 
 \end{document}
