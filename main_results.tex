@@ -55,4 +55,15 @@ Proof Sketch of Corollary:
 The Fourier coefficient $\hat{f}(n)$ can be expressed as:
 $$\hat{f}(n) = \frac{1}{2\pi} \left( \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx + i \int_{-\pi}^{\pi} f(x) \sin(-nx) \, dx \right)$$
 Since $\cos(nx)$ and $\sin(nx)$ are bounded functions, the absolute integrability of $f$ is preserved when multiplied by these functions. As $|n| \to \infty$, both the real and imaginary parts of the integral tend to zero by applying the Riemann--Lebesgue lemma (and its cosine variant) with $\lambda = n$. Therefore, $\hat{f}(n) \to 0$ as $|n| \to \infty$.
+
+\section*{Parseval's Identity}
+For square-integrable functions $f, g \in L^2(\mathbb{T})$, the Parseval formulas for the squared $L^2$-norm and the inner product are:
+\[
+  \frac{1}{2\pi}\int_{\mathbb{T}} |f(t)|^2 dt = \sum_{n\in\mathbb{Z}} |c_n|^2, \quad \frac{1}{2\pi}\int_{\mathbb{T}} f(t)\overline{g(t)} dt = \sum_{n\in\mathbb{Z}} c_n \overline{d_n},
+\]
+where $c_n = \hat{f}(n)$ and $d_n = \hat{g}(n)$. The latter is often called the \emph{polarized Parseval formula}.
+
+\vspace{1em}
+\noindent\textbf{Criterion for $L^2(\mathbb{T})$:} A function $f$ exists in $L^2(\mathbb{T})$ if and only if its Fourier coefficients are square-summable, $\sum_{n=-\infty}^{\infty} |\hat{f}(n)|^2 < \infty$.
+
 \end{document}
