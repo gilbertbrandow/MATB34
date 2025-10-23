@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\title{Main results}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-2em}
+
+\section*{Positive Summation Kernels}
+A family of functions $(K_n)_{n\ge1}$ on $\mathbb{R}$ (or on $\mathbb{T}$, the circle) is called a \emph{positive summation kernel} if the following hold:
+\begin{enumerate}[label=(\roman*)]
+  \item $K_n(x) \ge 0$ for all $x \in \mathbb{R}$ and each $n$;
+  \item $\displaystyle \int_{-\infty}^{\infty} K_n(x)\,dx = 1$ for all $n$;
+  \item for every $\delta > 0$, 
+  \[
+    \int_{|x|\ge \delta} K_n(x)\,dx \;\longrightarrow\; 0 \quad \text{as } n \to \infty.
+  \]
+\end{enumerate}
+Equivalently, $(K_n)$ is an \emph{approximate identity}: the mass of $K_n$ concentrates near $x=0$ as $n\to\infty$.  
+For such kernels, the convolution $(f*K_n)(x) = \int f(x-t)K_n(t)\,dt$ satisfies
+\[
+  (f*K_n)(x) \to f(x)
+\]
+for all $x$ where $f$ is continuous.
+
+\section*{Riemann-Lebesgue Lemma}
+
+\noindent Theorem 2.2 (Riemann--Lebesgue lemma)
+Let $f$ be absolutely integrable in the Riemann sense on a finite or infinite interval $I$. Then
+\[
+  \lim_{\lambda\to\infty} \int_{I} f(u)\sin(\lambda u)\,du = 0.
+\]
+(A corresponding result holds for $\cos(\lambda u)$ or $e^{i\lambda u}$.)
+
+\subsection*{Corollary for Fourier Coefficients}
+
+\noindent Corollary.
+Let $f \in L^1(\mathbb{T})$ (i.e., $\int_{-\pi}^{\pi} |f(x)| dx < \infty$). Its complex Fourier coefficients are:
+\[
+  \hat{f}(n) = c_n = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)e^{-inx}\,dx, \qquad n\in\mathbb{Z}.
+\]
+\emph{The Fourier coefficients of any integrable function vanish at infinity:}
+\[
+  \hat{f}(n) \longrightarrow 0 \quad \text{as } |n| \to \infty.
+\]
+
+Proof Sketch of Corollary:
+The Fourier coefficient $\hat{f}(n)$ can be expressed as:
+$$\hat{f}(n) = \frac{1}{2\pi} \left( \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx + i \int_{-\pi}^{\pi} f(x) \sin(-nx) \, dx \right)$$
+Since $\cos(nx)$ and $\sin(nx)$ are bounded functions, the absolute integrability of $f$ is preserved when multiplied by these functions. As $|n| \to \infty$, both the real and imaginary parts of the integral tend to zero by applying the Riemann--Lebesgue lemma (and its cosine variant) with $\lambda = n$. Therefore, $\hat{f}(n) \to 0$ as $|n| \to \infty$.
+\end{document}

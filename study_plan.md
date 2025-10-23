@@ -122,14 +122,18 @@ Exercises
 Reading
 
 - \[V]:
-  - [ ] Ch. 7.7–7.8 (Applications of the Fourier transform).
-  - [ ] Ch. 7.9 Sampling theorem.
+  - [x] Ch. 7.7–7.8 (Applications of the Fourier transform).
+  - [x] Ch. 7.9 Sampling theorem.
 
 Exercises
 
 - \[V]:
-  - [x] 7.11, 7.12 (REVISIT), 7.13, 7.14(REVISIT), 7.15, 7.16
-  - [ ] 7.25, 7.26, 7.27, 7.28
+  - [x] 7.11, 7.12(REVISIT), 7.13, 7.14(REVISIT), 7.15, 7.16
+  - [x] 7.25, 7.26(REVISIT), 7.27(REVISIT), 7.28
 - \[E]:
   - [ ] 407, 408, 409
   - [ ] 410, 411, 437, 438, 439
+
+## What to do
+
+- Create list of main results (when failing exercises)
