@@ -274,6 +274,38 @@ For $f \in L^1(\mathbb{R})$, the Fourier Transform $\hat{f}$ is defined as:
 \hat{f}(\omega) = \mathcal{F}\{f\}(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt, \qquad \omega \in \mathbb{R}.
 \]
 
+\subsection*{Real and Imaginary Parts}
+For a real-valued function $f(t)$, the Fourier Transform $\hat{f}(\omega)$ is generally complex and can be split into real and imaginary parts:
+\[
+\hat{f}(\omega) = \int_{-\infty}^{\infty} f(t) (\cos(-\omega t) + i \sin(-\omega t)) dt = \int_{-\infty}^{\infty} f(t) \cos(\omega t) dt - i \int_{-\infty}^{\infty} f(t) \sin(\omega t) dt
+\]
+
+\noindent
+Thus, we define:
+\begin{align*}
+\Re\{\hat{f}(\omega)\} &= \int_{-\infty}^{\infty} f(t) \cos(\omega t) dt \\
+\Im\{\hat{f}(\omega)\} &= -\int_{-\infty}^{\infty} f(t) \sin(\omega t) dt
+\end{align*}
+
+\subsection*{Symmetry Simplifications (for Real-Valued $f$)}
+The symmetry of $f(t)$ simplifies the computation of $\hat{f}(\omega)$.
+
+\begin{itemize}[leftmargin=*, label={$\bullet$}]
+    \item ($f(t) = f(-t)$):
+    The product $f(t)\sin(\omega t)$ is odd, so $\int_{-\infty}^{\infty} f(t) \sin(\omega t) dt = 0$.
+    The product $f(t)\cos(\omega t)$ is even, so $\int_{-\infty}^{\infty} f(t) \cos(\omega t) dt = 2 \int_{0}^{\infty} f(t) \cos(\omega t) dt$.
+    \[
+    \hat{f}(\omega) = 2 \int_{0}^{\infty} f(t) \cos(\omega t) dt \quad \text{($\hat{f}$ is purely real and even)}
+    \]
+
+    \item ($f(t) = -f(-t)$):
+    The product $f(t)\cos(\omega t)$ is odd, so $\int_{-\infty}^{\infty} f(t) \cos(\omega t) dt = 0$.
+    The product $f(t)\sin(\omega t)$ is even, so $\int_{-\infty}^{\infty} f(t) \sin(\omega t) dt = 2 \int_{0}^{\infty} f(t) \sin(\omega t) dt$.
+    \[
+    \hat{f}(\omega) = -i \left( 2 \int_{0}^{\infty} f(t) \sin(\omega t) dt \right) \quad \text{($\hat{f}$ is purely imaginary and odd)}
+    \]
+\end{itemize}
+
 \subsection*{Key $L^1(\mathbb{R})$ Properties}
 
 \noindent
