@@ -28,7 +28,7 @@ Exercises
   - [x] 117 (Differentiation of Power series)
   - [x] 118 (REVISIT)
   - [x] 122, 123, 124
-  - [ ] 125, 126, 127
+  - [x] 125, 126, 127
 - \[V]:
   - [x] Ch. 2.3: 2.12, 2.15(REVISIT), 2.16
   - [x] Ch: 2.4: 2.17, 2.18, 2.19, 2.20(REVISIT, Gaussian Integral)

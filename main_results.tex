@@ -56,6 +56,30 @@ The Fourier coefficient $\hat{f}(n)$ can be expressed as:
 $$\hat{f}(n) = \frac{1}{2\pi} \left( \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx + i \int_{-\pi}^{\pi} f(x) \sin(-nx) \, dx \right)$$
 Since $\cos(nx)$ and $\sin(nx)$ are bounded functions, the absolute integrability of $f$ is preserved when multiplied by these functions. As $|n| \to \infty$, both the real and imaginary parts of the integral tend to zero by applying the Riemann--Lebesgue lemma (and its cosine variant) with $\lambda = n$. Therefore, $\hat{f}(n) \to 0$ as $|n| \to \infty$.
 
+\section*{Convolution (on $\mathbb{R}_+$) and the Convolution Theorem}
+
+\noindent
+Assume $f,g:\mathbb{R}_+\to\mathbb{C}$ are causal (zero for $t<0$), piecewise continuous, and of exponential order so that Laplace transforms exist.
+
+\subsection*{Definition (Convolution)}
+\[
+(f*g)(t)\;:=\;\int_{0}^{t} f(t-\tau)\,g(\tau)\,d\tau,\qquad t\ge 0.
+\]
+
+\subsection*{Algebraic Laws}
+For all admissible $f,g,h$ and scalars $\alpha,\beta$:
+\begin{align*}
+\text{Commutative: }& f*g = g*f,\\
+\text{Associative: }& (f*g)*h = f*(g*h),\\
+\text{Distributive: }& f*(\alpha g+\beta h) = \alpha(f*g)+\beta(f*h).
+\end{align*}
+
+\subsection*{Convolution Theorem (Laplace)}
+Let $F(s)=\mathcal{L}\{f\}(s)$ and $G(s)=\mathcal{L}\{g\}(s)$ on a common half-plane $\Re s>\sigma_0$. Then
+\[
+\;\mathcal{L}\{f*g\}(s)=F(s)\,G(s)\;
+\]
+(Convergence holds on any half-plane where both $F$ and $G$ exist.)
 \section*{The Laplace Transform}
 
 Let $H(t)$ be the Heaviside step function, $H(t)=0$ for $t<0$ and $H(t)=1$ for $t\ge0$.  
