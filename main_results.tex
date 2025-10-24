@@ -118,6 +118,60 @@ $f(t-a)\,H(t-a)$ & $\displaystyle e^{-as}F(s)$ & $a>0$ (second shifting)\\[8pt]
 $e^{at}f(t)$ & $\displaystyle F(s-a)$ & $\Re s>a+\sigma_0$, if $F$ converges for $\Re s>\sigma_0$
 \end{tabular*}
 
+\subsection*{Operational Rules for the Laplace Transform}
+
+Let $\mathcal{L}\{f(t)\}(s) = \tilde{f}(s)$, and assume all transforms exist for sufficiently large $\Re s$.
+
+\begin{enumerate}[label=(\roman*)]
+  \item \textbf{Linearity:}
+  \[
+  \mathcal{L}\{\alpha f(t) + \beta g(t)\}(s)
+  = \alpha \tilde{f}(s) + \beta \tilde{g}(s),
+  \qquad \alpha, \beta \in \mathbb{C}.
+  \]
+
+  \item \textbf{Exponential (Damping) Rule:}
+  \[
+  \mathcal{L}\{e^{a t} f(t)\}(s)
+  = \tilde{f}(s - a).
+  \]
+
+  \item \textbf{Time Shift (Delay) Rule:}
+  If $f(t) = 0$ for $t < 0$ and $a > 0$, then
+  \[
+  \mathcal{L}\{f(t - a)\}(s)
+  = e^{-a s}\,\tilde{f}(s).
+  \]
+
+  \item \textbf{Scaling Rule:}
+  For $a > 0$,
+  \[
+  \mathcal{L}\{f(a t)\}(s)
+  = \frac{1}{a}\,\tilde{f}\!\left(\frac{s}{a}\right).
+  \]
+  \item \textbf{Multiplication by $t$ (and by $t^n$):}
+  \[
+    \mathcal{L}\{t\,f(t)\}(s) \;=\; -\frac{d}{ds}\tilde f(s), 
+    \qquad
+    \mathcal{L}\{t^{n}f(t)\}(s) \;=\; (-1)^{n}\frac{d^{\,n}}{ds^{\,n}}\tilde f(s)\quad (n\in\mathbb{N}).
+  \]
+
+  \item \textbf{Derivatives in $t$:}
+  \[
+    \mathcal{L}\{f'(t)\}(s)=s\,\tilde f(s)-f(0^+),\qquad
+    \mathcal{L}\{f''(t)\}(s)=s^{2}\tilde f(s)-s f(0^+)-f'(0^+),
+  \]
+  and in general
+  \[
+    \mathcal{L}\{f^{(n)}(t)\}(s)=s^{n}\tilde f(s)-\sum_{k=0}^{n-1}s^{\,n-1-k}f^{(k)}(0^+).
+  \]
+
+  \item \textbf{Integral in $t$:}
+  \[
+    \mathcal{L}\!\left\{\int_{0}^{t} f(u)\,du\right\}(s)=\frac{\tilde f(s)}{s}.
+  \]
+\end{enumerate}
+
 \section*{Fourier Series Coefficients}
 
 The representation of a $2\pi$-periodic function $f$ as a Fourier series depends on whether the complex exponential basis or the real trigonometric basis is used.
