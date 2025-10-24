@@ -208,6 +208,40 @@ The real Fourier coefficients are computed as:
 \end{itemize}
 \emph{Note:} The relationship between the coefficients is $c_0 = a_0$, and for $n \ge 1$, $c_n = \frac{1}{2}(a_n - ib_n)$ and $c_{-n} = \frac{1}{2}(a_n + ib_n)$.
 
+\section*{Fourier Inversion Theorem (Periodic Case)}
+
+Let $f : \mathbb{R} \to \mathbb{C}$ be a $2\pi$-periodic function such that $f$ is piecewise continuous and of bounded variation on $[-\pi,\pi]$.  
+Its (complex) Fourier coefficients are
+\[
+\hat{f}(n) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(t)e^{-int}\,dt, \qquad n \in \mathbb{Z}.
+\]
+Then the Fourier series
+\[
+S_N(f)(t) = \sum_{|n|\le N}\hat{f}(n)e^{int}
+\]
+converges, for each $t$, to
+\[
+\lim_{N\to\infty}S_N(f)(t)
+= \frac{f(t^-)+f(t^+)}{2}.
+\]
+That is, the series converges to the midpoint of the left and right limits of $f$ at each point.  
+In particular, if $f$ is continuous at $t$, then
+\[
+\sum_{n\in\mathbb{Z}}\hat{f}(n)e^{int} = f(t).
+\]
+
+\subsection*{Consequences}
+
+\begin{itemize}
+  \item If $\displaystyle \sum_{n\in\mathbb{Z}} |\hat{f}(n)| < \infty$, the Fourier series converges \emph{uniformly} to a \emph{continuous} $2\pi$-periodic function.
+  \item If $f$ has a jump discontinuity at $t_0$, the Fourier series converges to $\tfrac{1}{2}(f(t_0^-)+f(t_0^+))$, not to either one-sided limit.
+  \item Evaluating at $t=0$ gives
+  \(
+    \sum_{n\in\mathbb{Z}}\hat{f}(n)
+    = \frac{f(0^-)+f(0^+)}{2},
+  \)
+\end{itemize}
+
 \section*{Plancherel's Theorem (Parseval's Identity for Fourier Transforms)}
 
 Plancherel's Theorem relates the $L^2$ norm of a function in the time domain $L^2(\mathbb{R})$ to the $L^2$ norm of its Fourier Transform in the frequency domain $L^2(\mathbb{R})$. This identity is essential for evaluating integrals using Fourier transforms.
