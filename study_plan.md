@@ -136,4 +136,9 @@ Exercises
 
 ## What to do
 
-- Create list of main results (when failing exercises)
+- Start on list for main results (DONE)
+- Work through an entire single exam (DONE)
+- Work through Weirstrass M-test and exercises on Uniform convergence (DONE)
+- Work through Laplace, summarize in Main Results
+- Complete exercises on Fourier series
+- Read about Hilbert Spaces

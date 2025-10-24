@@ -56,6 +56,68 @@ The Fourier coefficient $\hat{f}(n)$ can be expressed as:
 $$\hat{f}(n) = \frac{1}{2\pi} \left( \int_{-\pi}^{\pi} f(x) \cos(nx) \, dx + i \int_{-\pi}^{\pi} f(x) \sin(-nx) \, dx \right)$$
 Since $\cos(nx)$ and $\sin(nx)$ are bounded functions, the absolute integrability of $f$ is preserved when multiplied by these functions. As $|n| \to \infty$, both the real and imaginary parts of the integral tend to zero by applying the Riemann--Lebesgue lemma (and its cosine variant) with $\lambda = n$. Therefore, $\hat{f}(n) \to 0$ as $|n| \to \infty$.
 
+\section*{The Laplace Transform}
+
+Let $H(t)$ be the Heaviside step function, $H(t)=0$ for $t<0$ and $H(t)=1$ for $t\ge0$.  
+We will always work with \emph{causal} functions, i.e. we take $f$ to be defined as
+\[
+f(t)\;:=\;f(t)\,H(t),
+\]
+so that $f(t)=0$ for all $t<0$.
+
+\medskip
+\noindent For a complex parameter $s$ with $\Re s$ large enough so that the integral converges (the \emph{region of convergence}),
+the \emph{Laplace transform} of $f$ is
+\[
+\mathcal{L}\{f\}(s)\;=\;\int_{0}^{\infty} f(t)\,e^{-st}\,dt.
+\]
+We also write $\tilde f(s)$ or $F(s)$ for $\mathcal{L}\{f\}(s)$.
+
+\subsection*{Functions of Exponential Order}
+
+\noindent
+Let $k>0$. A function $f:[0,\infty)\to\mathbb{C}$ is said to be of \emph{exponential order $k$} if:
+
+\begin{enumerate}[label=(\roman*)]
+  \item $f$ is continuous on every finite subinterval of $[0,\infty)$, except possibly for finitely many jump discontinuities;
+  \item there exists a constant $M>0$ such that
+  \[
+    |f(t)| \le M e^{k t}, \qquad t \ge 0.
+  \]
+\end{enumerate}
+
+\noindent
+The class of all such functions is denoted by $\mathcal{E}_k$.  
+If $f \in \mathcal{E}_k$ for some $k$, we say that $f$ is of \emph{exponential type} and write $f \in \mathcal{E} = \bigcup_{k>0} \mathcal{E}_k$.
+
+\medskip
+\noindent
+\textbf{Theorem.}  
+If $f \in \mathcal{E}_k$, then the Laplace transform
+\[
+\tilde{f}(s) = \int_{0}^{\infty} f(t)e^{-st}\,dt
+\]
+exists for all $s > k$.
+
+\subsection*{Common Laplace Transforms}
+(Here $a,b\in\mathbb{R}$, $n\in\mathbb{N}$, and the stated condition on $s$ ensures convergence.)
+\\
+\\
+\\
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l l @{}}
+\textbf{Function $f(t)$} & \textbf{$\mathcal{L}\{f\}(s)$} & \textbf{Condition on $s$}\\[4pt]\hline
+$1$ & $\displaystyle \frac{1}{s}$ & $\Re s>0$\\[8pt]
+$t^n$ & $\displaystyle \frac{n!}{s^{\,n+1}}$ & $\Re s>0$\\[8pt]
+$e^{at}$ & $\displaystyle \frac{1}{s-a}$ & $\Re s>a$\\[8pt]
+$\sin(bt)$ & $\displaystyle \frac{b}{s^{2}+b^{2}}$ & $\Re s>0$\\[8pt]
+$\cos(bt)$ & $\displaystyle \frac{s}{s^{2}+b^{2}}$ & $\Re s>0$\\[8pt]
+$\sinh(bt)$ & $\displaystyle \frac{b}{s^{2}-b^{2}}$ & $\Re s>|b|$\\[8pt]
+$\cosh(bt)$ & $\displaystyle \frac{s}{s^{2}-b^{2}}$ & $\Re s>|b|$\\[8pt]
+$f(t-a)\,H(t-a)$ & $\displaystyle e^{-as}F(s)$ & $a>0$ (second shifting)\\[8pt]
+$e^{at}f(t)$ & $\displaystyle F(s-a)$ & $\Re s>a+\sigma_0$, if $F$ converges for $\Re s>\sigma_0$
+\end{tabular*}
+
 \section*{Fourier Series Coefficients}
 
 The representation of a $2\pi$-periodic function $f$ as a Fourier series depends on whether the complex exponential basis or the real trigonometric basis is used.
