@@ -266,6 +266,38 @@ In particular, if $f$ is continuous at $t$, then
   \)
 \end{itemize}
 
+\section*{Fourier Transform (on $\mathbb{R}$)}
+
+\subsection*{Definition and Convention}
+For $f \in L^1(\mathbb{R})$, the Fourier Transform $\hat{f}$ is defined as:
+\[
+\hat{f}(\omega) = \mathcal{F}\{f\}(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt, \qquad \omega \in \mathbb{R}.
+\]
+
+\subsection*{Key $L^1(\mathbb{R})$ Properties}
+
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l @{}}
+\textbf{Property} & \textbf{Statement} \\
+\hline
+\textbf{Riemann--Lebesgue} & If $f \in L^1(\mathbb{R})$, then $\lim_{|\omega|\to\infty} \hat{f}(\omega) = 0$. \\
+\textbf{Continuity} & If $f \in L^1(\mathbb{R})$, then $\hat{f}(\omega)$ must be a \textbf{continuous} function on $\mathbb{R}$. \\
+\textbf{Inversion} & If $f, \hat{f} \in L^1(\mathbb{R})$, then $f(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \hat{f}(\omega) e^{i\omega t} d\omega$.
+\end{tabular*}
+\vspace{1em}
+
+\subsection*{Operational Rules}
+
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l @{}}
+\textbf{Time Domain} & \textbf{Frequency Domain} \\
+\hline
+$\mathcal{F}\{f'(t)\}$ & $i\omega \hat{f}(\omega)$ \\
+$\mathcal{F}\{t f(t)\}$ & $i \frac{d}{d\omega} \hat{f}(\omega)$ \\
+$\mathcal{F}\{f(t-a)\}$ & $e^{-i\omega a} \hat{f}(\omega)$ \\
+$\mathcal{F}\{f*g\}$ & $\hat{f}(\omega)\hat{g}(\omega)$ (Convolution Theorem)
+\end{tabular*}
+
 \section*{Plancherel's Theorem (Parseval's Identity for Fourier Transforms)}
 
 Plancherel's Theorem relates the $L^2$ norm of a function in the time domain $L^2(\mathbb{R})$ to the $L^2$ norm of its Fourier Transform in the frequency domain $L^2(\mathbb{R})$. This identity is essential for evaluating integrals using Fourier transforms.
