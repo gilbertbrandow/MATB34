@@ -356,4 +356,59 @@ For $f, g \in L^2(\mathbb{R})$, the inner product is preserved:
 \]
 The integrals in Problem 6(b) often rely on applying these formulas, usually by identifying the integrand with either the square of a transform $|\hat{f}(\xi)|^2$ or a product of transforms $\hat{f}(\xi)\overline{\hat{g}(\xi)}$.
 
+\section*{Canonical PDEs}
+
+\subsection*{Laplace Equation in the Unit Disk (Dirichlet Problem)}
+The Dirichlet problem for Laplace's equation ($\Delta u = 0$) on the unit disk $\mathbf{D} = \{r<1\}$ is defined by:
+$$
+\Delta u=0\ \text{ in } \{r<1\}, \qquad u(1,\theta)=g(\theta).
+$$
+
+\subsubsection*{The Poisson Kernel}
+The Poisson Kernel, $P_r(s)$ for the unit disk is defined by its Fourier series and its closed form:
+$$
+P_r(s) := \frac{1}{2\pi} \sum_{n\in\mathbb{Z}} r^{|n|} e^{i n s} = \frac{1}{2\pi} \frac{1-r^2}{1+r^2-2r\cos s}.
+$$
+
+\subsubsection*{The General Solution}
+The unique solution $u(r,\theta)$ is given by the Poisson Integral Formula (a convolution of the boundary data $g(\phi)$ with the Poisson Kernel):
+$$
+u(r,\theta)=\int_{-\pi}^{\pi} P_r(\theta-\phi)\,g(\phi)\,d\phi.
+$$
+Alternatively, the solution is expressed as a Fourier series by multiplying the boundary function's coefficients with $r^n$:
+$$
+u(r,\theta)=\frac{a_0}{2}+\sum_{n=1}^\infty r^n\big(a_n\cos n\theta+b_n\sin n\theta\big),
+$$
+where $a_n$ and $b_n$ are the Fourier coefficients of $g(\theta)$.
+
+\subsubsection*{Properties of the Poisson Kernel}
+The Poisson Kernel $P_r(s)$ has the following key properties for $r<1$:
+\begin{enumerate}
+    \item $P_r(s) = P_r(-s) \ge 0$.
+    \item $\int_{\mathbf{T}} P_r(s)\,ds = 1$.
+    \item If $\delta > 0$, then $\lim_{r\nearrow 1} \int_{\delta}^{\pi} P_r(s)\,ds = 0$.
+\end{enumerate}
+
+\subsection*{Heat Equation on the Infinite Rod}
+The problem seeks the temperature $u(x,t)$ in an infinite rod given an initial temperature distribution $f(x)$. This is the initial value problem (IVP):
+$$
+u_{xx} = u_t, \quad t>0, \ x \in \mathbb{R} \qquad \text{with} \qquad u(x,0) = f(x).
+$$
+The problem is solved using the Fourier Transform in the spatial variable $x$, which converts the PDE into a first-order ODE in time in the transform domain.
+
+\subsubsection*{The General Solution (Convolution)}
+The unique solution $u(x,t)$ is given by the convolution of the initial data $f(x)$ with the \textbf{Heat Kernel} $E(x,t)$:
+$$
+u(x,t) = (E * f)(x) = \frac{1}{\sqrt{4\pi t}} \int_{-\infty}^{\infty} e^{-y^2/(4t)} f(x-y)\,dy, \quad t > 0.
+$$
+
+\subsubsection*{The Heat Kernel $E(x,t)$}
+The Heat Kernel, also known as the fundamental solution, is the function whose Fourier Transform is $e^{-\omega^2 t}$. It is defined as:
+$$
+E(x, t) = \frac{1}{\sqrt{4\pi t}} \exp\left(-\frac{x^2}{4t}\right).
+$$
+This kernel is a \textbf{positive summation kernel} (or approximate identity). This means that for fixed $t>0$, $E(x,t)$ is positive, and as $t \to 0$:
+This ensure that $u(x,t)$ approaches the initial condition $f(x)$ as $t \to 0$.
+
+
 \end{document}
